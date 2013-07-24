@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::MSP::</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/jMask.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/jMask.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js" ></script>
+<script type="text/javascript" src="js/raphael-min.js"  ></script>
+<script type="text/javascript" src="js/custom.js"  ></script>
+<script type="text/javascript" src="js/common.js"  ></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		$("#hide").click(function(){
+  			$(".login_box").hide();
+		});
+		$("#show").click(function(){
+  			$(".login_box").show();
+		});
+	});
+	</script>
+
+
+</head>
+
+<body>
+<div id="main">
+<div id="header">
+<div id="top">
+<div id="login"><a href="#" id="show">Login</a></div>
+<div class="login_box">
+<div class="login_inner">
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="E-mail id" onblur="if (this.value=='') { this.value='E-mail id'; }" onfocus="if (this.value=='E-mail id') { this.value=''; }" />
+</Div>
+
+<Div class="sign_in_form1">
+<input name="" type="password" class="sign_in_textarea" value="Password" onblur="if (this.value=='') { this.value='Password'; }" onfocus="if (this.value=='Password') { this.value=''; }" />
+</Div>
+
+<div class="keepme"><input name="" type="checkbox" value="" />Keep me signed in </div>
+
+<div class="keepme"> 
+<a href="#"><div class="signin_top"></div></a> 
+<div class="forgot_signin">Forgot password</div>   
+</div>
+
+
+
+<a href="#" id="hide" class="close"></a>
+
+
+</div>
+</div>
+</div>
+<div class="logo"></div>
+<div id="logo-tag"><h1><a href="index.html">care and convenience main street pharmacy</a></h1>
+</div>
+
+<div id="right_links">
+<div id="toplinks">
+<div class="innertoplinks"><a href="#">Feedback</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Store Locator</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Shopping Cart</a></div>
+</div>
+
+<div id="outersearch">
+<div id="search">
+<input type="text" name="textfield" class="textarea" />       
+</div>
+<a href="#"><div id="searchbtn"></div></a></div>
+</div>
+</div>
+
+
+<div id="nav">
+<!--<div id="navigation">
+  <ul class="lavaLampWithImage" id="navi">
+    <li><a href="#"  class="current">Home</a></li>
+    <li><a href="#">Pharmacy Services</a></li>
+    <li><a href="#">Manageprescription</a></li>
+    <li><a href="#">Druginformation</a></li>
+    <li><a href="#">Onlineshop</a></li>
+    <li><a href="#">Our Activities</a></li>
+    <li><a href="#">My Account</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>-->
+	<ul>
+    	<li class="link01"><a href="" class="active_nav"></a></li>
+        <li class="link02"><a href=""></a></li>
+        <li class="link03"><a href=""></a>
+        	<ul class="subnav">
+                    <li><a href="#">Refill prescription</a></li>
+                    <li><a href="#">Transfer prescription</a></li>
+                    <li><a href="#">New prescription</a></li>
+                    
+
+                </ul>
+        </li>
+        <li class="link04"><a href=""></a></li>
+        <li class="link05"><a href=""></a></li>
+        <li class="link06"><a href=""></a></li>
+        <li class="link07"><a href=""></a></li>
+        <li class="link08"><a href=""></a></li>
+    </ul>
+    
+  </div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+
+<div id="createaccount_outer">
+<div id="signin_outer">
+<div id="createaccount_head">Sign In Or Create account</div>
+<div id="createaccount_line"></div>
+<div class="sign_in">
+<div class="sign_in_head">ALREADY HAVE AN ACCOUNT? </div>
+<div class="sign_in_inner">
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="E-mail id" onblur="if (this.value=='') { this.value='E-mail id'; }" onfocus="if (this.value=='E-mail id') { this.value=''; }" /> 
+</Div>
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="Password" onblur="if (this.value=='') { this.value='Password'; }" onfocus="if (this.value=='Password') { this.value=''; }" />
+</Div>
+<div class="sign_in_outerbtn">
+<div class="sign_in_btn">
+<a href="#"><div class="signin_top"></div></a> 
+
+</div>
+
+<div class="signin_forgotpassword"><a href="#" class="forgot_link">Help</a> </div>
+<div class="signin_forgotpassword"><a href="#" class="forgot_link">Forgot password?</a> </div>
+
+</div>
+
+</div>
+</div>
+
+<div class="signin_adds">
+	<div id="futuretopic_outer">
+    	<div id="futuretopic">Featured Topics</div>
+        <div id="future_list">
+        Children's Health<br />
+	Cold and Flu<br />
+	Diabetes<br />
+	Ear Care<br />
+	Pain Management<br />
+	High Blood Pressure<br />
+	Weight Loss<br />
+	Women's Health
+	</div>
+    <div id="button_topic"><b>&nbsp;&nbsp;&nbsp;<a href="#" class="forgot_link">View All Topic</a></b></div>
+    
+    </div>
+    <div id="ad"></div>
+    
+</div>
+<div class="clear"></div>
+<div class="sign_in">
+<div class="sign_in_head">NEW TO OUR PHARMACY?</div>
+<div class="sign_in_inner">
+<p>Register today for our online account.</p>
+
+  <p>- Manage your prescriptions<br />
+    - View and print your prescription records<br />
+    - Set up Auto Refills for medications you take regularly<br />
+    - Ability to save your shopping cart<br />
+	<div class="sign_in_outerbtn">
+	<div class="sign_in_btn"><input type="button"  class="sign_in-btn02"/>
+</div>
+	</div>
+   
+</div>
+</div>
+
+<div class="signin_adds">
+<span class="black01">Create an Account FAQs</span>
+  <br /><br /><div id="box1"><p><b><i>Q. How do I sign in to my existing CVS.com account?</i></b><br>
+    
+    A. If you have an existing CVS.com account, you can sign in using the email address in your account (this is your User ID), and your current password. All of your existing account information will be available to you...To protect your privacy, we require you to do a one-time</p></div>
+  <div id="box2"><p><b><i>Q. What is the Prescription Management sign up process?</i></b><br />
+    A. To protect your privacy, we require you to do a one-time, two-step verification process so that no one but you can view your prescription records. You must first create an online account, and then sign up for Prescription Management by completing the verification process.To protect your privacy, we require you to do a one-time </p></div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+<div id="footer">
+<div id="footer_inner">
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Services</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Refill Prescription</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Transfer Prescription</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Consultation Corner</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Health Information Center</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Drug Information Center</a>
+</div>
+
+</div>
+
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Information</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sign In</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Services</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Activities</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shopping Cart</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Online shopping</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Help</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Contact Us</a></div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sitemap</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Privacypolicy</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Terms&amp;condtion</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shipping Information</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Get in Touch</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/phone.png" alt="img" /></div>
++971 (0)4 446 2629</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/mail.jpg" alt="img" /></div>
+mainst.rx4@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/link.png" alt="img" /></div>
+mainst.rx@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/follows.png" alt="img" /></div>
+<div class="follows"><a href="#"><img src="images/rss.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/twitter.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/facebook.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/in.png" alt="img" /></a></div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

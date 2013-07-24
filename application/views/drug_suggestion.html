@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::MSP::</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/jMask.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/jMask.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js" ></script>
+<script type="text/javascript" src="js/raphael-min.js"  ></script>
+<script type="text/javascript" src="js/custom.js"  ></script>
+<script type="text/javascript" src="js/common.js"  ></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		$("#hide").click(function(){
+  			$(".login_box").hide();
+		});
+		$("#show").click(function(){
+  			$(".login_box").show();
+		});
+	});
+	</script>
+
+
+</head>
+
+<body>
+<div id="main">
+<div id="header">
+<div id="top">
+<div id="login"><a href="#" id="show">Login</a></div>
+<div class="login_box">
+<div class="login_inner">
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="E-mail id" onblur="if (this.value=='') { this.value='E-mail id'; }" onfocus="if (this.value=='E-mail id') { this.value=''; }" />
+</Div>
+
+<Div class="sign_in_form1">
+<input name="" type="password" class="sign_in_textarea" value="Password" onblur="if (this.value=='') { this.value='Password'; }" onfocus="if (this.value=='Password') { this.value=''; }" />
+</Div>
+
+<!--<div class="keepme"><input name="" type="checkbox" value="" />Keep me signed in </div>-->
+
+<div class="keepme"> 
+<div class="signin_top"><a href="#"><input type="submit" name="button" id="button" value="Sign In" class="button" /></a>
+</div>
+<div class="clear"></div>
+<div class="forgot_signin"><a href="forgotpassword.html" class="linkstyle">Forgot password</a></div> 
+<div class="forgot_signin"><a href="create_account.html" class="linkstyle">Register</a></div>  
+
+</div>
+
+
+
+<a href="#" id="hide" class="close"></a>
+
+
+</div>
+</div>
+</div>
+<div class="logo"></div>
+<div id="logo-tag"><h1><a href="index.html">care and convenience main street pharmacy</a></h1>
+</div>
+
+<div id="right_links">
+<div id="toplinks">
+<div class="innertoplinks"><a href="#">Feedback</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Store Locator</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Shopping Cart</a></div>
+</div>
+
+<div id="outersearch">
+<div id="search">
+<input type="text" name="textfield" class="textarea" />       
+</div>
+<a href="#"><div id="searchbtn"></div></a></div>
+</div>
+</div>
+
+
+<div id="nav">
+	<ul>
+    	<li class="link01"><a href="index.html"></a></li>
+        <li class="link02"><a href="services.html"></a></li>
+        <li class="link03"><a href="" class="active_nav"></a>
+        		<ul class="subnav">
+                   <li><a href="refillprescription.html">Refill prescription</a></li>
+                    <li><a href="transferprescription.html">Transfer prescription</a></li>
+                    <li><a href="newprescription request.html">New prescription</a></li>
+                    
+
+                </ul>
+        </li>
+        <li class="link04"><a href="druginformation.html"></a></li>
+        <li class="link05"><a href=""></a></li>
+        <li class="link06"><a href=""></a></li>
+        <li class="link07"><a href=""></a></li>
+        <li class="link08"><a href=""></a>
+        <ul class="subnav">
+                   <li><a href="healthinformation.html">Health Information</a></li>
+                    <li><a href="cosultation.html">Consultation Corner</a></li>
+                
+        </ul></li>
+        <li class="link09"><a href=""></a></li>
+    </ul>
+    
+  </div>
+
+<div class="clear"></div>
+
+<div id="frame" style="display:none;">
+</div>
+
+<div id="createaccount_outer">
+<div id="refill_outer"> 
+<div id="createaccount_head">Suggest a Product</div>
+<div id="createaccount_line"></div>
+<div id="createaccount_desc">If you weren't able to find what you were looking for, we want to
+know how we can help. Your inquiry will be routed to a store
+inventory specialist. Online Privacy &amp; Security Policy</div>
+<div id="drug_suggestion">
+<div id="transfer_inner">
+	<div class="drug_suggestion_head">
+    	Describe the product you are looking for</div>
+    <div class="drug_suggestion_cmnt">
+      <div class="transfer_box03">
+        	<textarea name="" cols="" rows="" class="drug_suggestion_txtarea"></textarea>
+        </div>
+        <div class="suggestion_checkbox">
+        <input name="" type="checkbox" value="" />Please do not contact me about this matter.
+          
+        </div>
+    </div>
+    <div class="drug_suggestion_head">
+    	To receive a response, enter your information below before sending this form.</div>
+    <div class="transfer_box01">
+    	<div class="transfer_box04">First Name
+        	<input type="text" name="textfield" id="textfield" class="createaccount_textarea" value="First Name" onblur="if (this.value=='') { this.value='First Name'; }" onfocus="if (this.value=='First Name') { this.value=''; }" /> 
+        </div>
+        <div class="transfer_box04">Last Name
+        	<input type="text" name="textfield" id="textfield" class="createaccount_textarea" value="Last Name" onblur="if (this.value=='') { this.value='Last Name'; }" onfocus="if (this.value=='Last Name') { this.value=''; }" /> 
+        </div>
+        
+        <div class="transfer_box04">Email Address
+        	<input type="text" name="textfield" id="textfield" class="createaccount_textarea" value="Email Address" onblur="if (this.value=='') { this.value='Email Address'; }" onfocus="if (this.value=='Email Address') { this.value=''; }" /> 
+        </div>
+        </div>
+       
+    <div class="transfer_box01">
+      <div class="cart_method"><a href="#"><input type="submit" name="button" id="button" value="Submit" class="newbutton" /></a></div>
+</div>
+</div>
+</div>
+	<div class="transfer_adds">
+   <div id="mostpopular">Advertise Here</div>
+   <div class="advertise">Advertise Here</div>
+       <div class="advertise">Advertise Here</div>
+       <div class="advertise">Advertise Here</div>
+       <div class="advertise">Advertise Here</div>
+        <div class="advertise">Advertise Here</div>
+       <div class="advertise">Advertise Here</div>
+   </div>
+   </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="footer">
+<div id="footer_inner">
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Services</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Refill Prescription</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Transfer Prescription</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Consultation Corner</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Health Information Center</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Drug Information Center</a>
+</div>
+
+</div>
+
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Information</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sign In</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Services</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Activities</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shopping Cart</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Online shopping</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Help</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Contact Us</a></div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sitemap</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Privacypolicy</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Terms&amp;condtion</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shipping Information</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Get in Touch</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/phone.png" alt="img" /></div>
++971 (0)4 446 2629</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/mail.jpg" alt="img" /></div>
+mainst.rx4@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/link.png" alt="img" /></div>
+mainst.rx@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/follows.png" alt="img" /></div>
+<div class="follows"><a href="#"><img src="images/rss.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/twitter.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/facebook.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/in.png" alt="img" /></a></div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

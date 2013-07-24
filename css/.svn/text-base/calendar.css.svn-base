@@ -1,0 +1,139 @@
+
+body {/*
+	font-family:verdana,Arial,Helvetica,sans-serif;
+	font-size: 8pt;
+	*/
+	}
+
+/* the div that holds the date picker calendar */
+.dpDiv {
+	}
+
+
+/* the table (within the div) that holds the date picker calendar */
+.dpTable {
+	/*font-family: Tahoma, Arial, Helvetica, sans-serif; */
+	font-size: 10px;
+	text-align: center;
+	color: #000000;
+	background-color: #ebf8e6;
+	border: 1px solid black;
+	}
+
+
+/* a table row that holds date numbers (either blank or 1-31) */
+.dpTR {
+	}
+
+
+/* the top table row that holds the month, year, and forward/backward buttons */
+.dpTitleTR {
+	}
+
+
+/* the second table row, that holds the names of days of the week (Mo, Tu, We, etc.) */
+.dpDayTR {
+	}
+
+
+/* the bottom table row, that has the "This Month" and "Close" buttons */
+.dpTodayButtonTR {
+	}
+
+
+/* a table cell that holds a date number (either blank or 1-31) 
+------Dipu---Change border color of dates 1,2,3,4.......30----------Dipu
+*/
+.dpTD {
+	border: 0px solid #000000;
+	}
+
+
+/* a table cell that holds a highlighted day (usually either today's date or the current date field value) */
+.dpDayHighlightTD {
+	background-color: #CCCCCC;
+	border: 0px solid #AAAAAA;
+	}
+
+
+/* the date number table cell that the mouse pointer is currently over (you can use contrasting colors to make it apparent which cell is being hovered over) 
+	-----dipu----on mouse over change the color of date-----------dipu
+*/
+
+.dpTDHover {
+	background-color: #0000cc;
+	border: 0px solid #000000;
+	cursor: pointer;
+	color: #ffffff;
+	}
+
+
+/* the table cell that holds the name of the month and the year */
+.dpTitleTD {
+	}
+
+
+/* a table cell that holds one of the forward/backward buttons */
+.dpButtonTD {
+	}
+
+
+/* the table cell that holds the "This Month" or "Close" button at the bottom */
+.dpTodayButtonTD {
+	}
+
+
+/* a table cell that holds the names of days of the week (Mo, Tu, We, etc.)
+Dipu------This is used for changing color,border color of days[su,mo......]------Dipu
+ */
+.dpDayTD {
+	background-color: #838489;
+	border: 1px solid #000000;
+	color: #0000CC;
+	}
+
+
+/* additional style information for the text that indicates the month and year 
+	----Dipu-------This class is used for displaying month and year------Dipu----
+*/
+.dpTitleText {
+	font-size: 12px;
+	font-weight: bold;
+	}
+
+
+/* additional style information for the cell that holds a highlighted day (usually either today's date or the current date field value) 
+----Dipu-------This class is used for displaying Selected Month------Dipu----
+*/ 
+.dpDayHighlight {
+	color: white;
+	background-color: #0000cc;
+	font-weight: bold;
+	border: 0px solid #000000;
+
+	}
+
+
+/* the forward/backward buttons at the top
+----Dipu-------This class is used for displaying Arrow color[< and >]------Dipu----
+
+ */
+.dpButton {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+	background: #838489;
+	font-weight: bold;
+	padding: 0px;
+	}
+
+
+/* the "This Month" and "Close" buttons at the bottom */
+.dpTodayButton {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+	background: #838489;
+	font-weight: bold;
+	}
+

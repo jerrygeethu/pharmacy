@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/431/pharmacyy/trunk/admin/config
+END
+foreign_chars.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/foreign_chars.php
+END
+doctypes.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/doctypes.php
+END
+mimes.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/mimes.php
+END
+constants.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/constants.php
+END
+user_agents.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/user_agents.php
+END
+routes.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/routes.php
+END
+profiler.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/profiler.php
+END
+hooks.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/hooks.php
+END
+database.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/database.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/index.html
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/398/pharmacyy/trunk/admin/config/config.php
+END
+smileys.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/smileys.php
+END
+autoload.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/pharmacyy/trunk/admin/config/autoload.php
+END

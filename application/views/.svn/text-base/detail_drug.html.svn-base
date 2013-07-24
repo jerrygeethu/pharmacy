@@ -1,0 +1,97 @@
+<div class="clear"></div>
+<div class="clear"></div>
+
+<div id="frame" style="display:none;"></div>
+
+<div id="createaccount_outer">
+	<div id="refill_outer">
+		<div id="createaccount_head">Search Results</div>
+		<div id="createaccount_line"></div>
+		<div id="createaccount_desc">
+			<div class="druglink01"><a href="druginformation.html">Druginformation</a></div>
+		</div>
+
+		<div class="clear"></div>
+		<div id="detail_drug">
+			<div id="detail_drugleft">
+				<div id="drug_img">
+					<div id="drug_imginner"><img src="images/products/hemo.jpg" alt="img" width="189" height="186" /></div>
+				</div>
+			</div>
+			<div id="detail_drugright">
+				<a href="#" class="requestprescription"> <img src="images/arrow_sm_purpleonwhite.gif" /> Request a prescription now</a>
+				<div id="drug_name">Drug Information for: <span class="coloredsmall">HYDROCODONE/APAP 5MG/500Mg TABS</span></div>
+				<div id="drugdesc"></div>
+				<div class="clear"></div>
+				<div class="tab_container">
+					<div class="tab_content">
+						<h2>Side effects</h2>
+
+						<p>SIDE EFFECTS, that may go away during treatment, include mild diarrhea, headache, nausea, or stomach pain or upset. If they continue or are bothersome, check with your doctor. CHECK WITH YOUR DOCTOR AS SOON AS POSSIBLE if you experience vomiting, changes in hearing, or ringing in the ears. CONTACT YOUR DOCTOR IMMEDIATELY if you experience chest pain; swelling of your hands, legs, face, lips, eyes, throat, or tongue; difficulty swallowing, speaking, or breathing; eye or vision problems; fainting; hearing loss; irregular heartbeat; muscle weakness; reddened, blistered, or swollen skin; seizures; severe stomach pain, cramps, or diarrhea; bloody stools; unusual vaginal itching, odor, or discharge; or yellowing of the eyes or skin. An allergic reaction to this medicine is unlikely, but seek immediate medical attention if it occurs. Symptoms of an allergic reaction include rash, itching, swelling, dizziness,bloody stools; unusual vaginal itching, odor, or discharge; or yellowing of the eyes or skin. An allergic reaction to this medicine is unlikely, but seek immediate medical attention if it occurs. Symptoms of an allergic reaction include rash, itching, Symptoms of an allergic reaction include rash, of all side effects that may occur. If you have questions about side effects, contact your healthcare provider. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088. </p>
+
+						<h2>Ingredients</h2>
+
+						<p>SIDE EFFECTS, that may go away during treatment, include mild diarrhea, headache, nausea, or stomach pain or upset. If they continue or are bothersome, check with your doctor. CHECK WITH YOUR DOCTOR AS SOON AS POSSIBLE if you experience vomiting, changes in hearing, or ringing in the ears. CONTACT YOUR DOCTOR IMMEDIATELY if you experience chest pain; swelling of your hands, legs, face, lips, eyes, throat, or tongue; difficulty swallowing, speaking, or breathing; eye or vision problems; fainting; hearing loss; irregular heartbeat; muscle weakness; ischarge; or yellowing of the eyes or skin. An allergic reaction to this medicine is unlikely, but seek immediate medical attention if it occurs. Symptoms of an allergic reaction include rash, itching, Symptoms of an allergic reaction include rash, of all side effects that may occur. If you have questions about side effects, contact your healthcare provider. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088. </p>
+
+						<h2>Precaution</h2>
+
+						<p>SIDE EFFECTS, that may go away during treatment, include mild diarrhea, headache, nausea, or stomach pain or upset. If they continue or are bothersome, check with your doctor. CHECK WITH YOUR DOCTOR AS SOON AS POSSIBLE if you experience vomiting, changes in hearing, or ringing in the ears. CONTACT YOUR DOCTOR IMMEDIATELY if you experience chest pain; swelling of your hands, legs, face, lips, eyes, throat, or tongue; difficulty swallowing, speaking, or breathing; eye or vision problems; fainting; hearing loss; irregular heartbeat; muscle weakness;t may occur. If you have questions about side effects, contact your healthcare provider. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088. </p>
+						<h2>How to use</h2>
+
+						<p>SIDE EFFECTS, that may go away during treatment, include mild diarrhea, headache, nausea, or stomach pain or upset. If they continue or are bothersome, check with your doctor. CHECK WITH YOUR DOCTOR AS SOON AS POSSIBLE if you experience vomiting, changes in hearing, or ringing in the ears. CONTACT YOUR DOCTOR IMMEDIATELY if you experience chest pain; swelling of your hands, legs, face, lips, eyes, throat, or tongue; difficulty swallowing, speaking, or breathing; eye or vision problems; fainting; hearing loss; irregular heartbeat; muscle weakness; reddened, blistered, or swollen skin; seizures; severe stomach pain, cramps, or diarrhea; bloody stools; unusual vaginal itching, odor, or discharge; or yellowing of the eyes or skin. An allergic reaction to this medicine is unlikely, but seek immediate medical aif it occurs. Symptoms of an allergic reaction include rash, itching, Symptoms of an allergic reaction include rash, of all side effects that may occur. If you have questions about side effects, contact your healthcare provider. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088. </p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+
+			<div style="width:869px; float:left;"> 
+				<div class="comment_outer">
+					<div class="comment_name">Tijina</div>
+					<div class="comment_name">Primemove Technologies</div>
+					<div class="comment_dotted"></div>
+					<div class="comments">&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.&quot; </div>
+				</div>
+				
+				<div id="comments_btnouter">
+					<div class="comment_btn"><input type="submit" name="button2" value="Post comments" class="comment_btn01" /></div>
+					<div class="comment_btn"><input type="submit" name="button2" value="View all comments" class="comment_btn01" /></div>
+				</div>
+
+				<div id="postcomment">
+					<div id="write_review"><div id="review_icon"></div><div id="review">Write a review</div></div>
+					<div id="review01">
+					<form class="form">
+						<p class="name">
+							<input type="text" name="name" id="name" class="input_comment" />
+							<label for="name">Name</label>
+						</p>
+
+						<p class="email">
+							<input type="text" name="email" id="email" class="input_comment" />
+							<label for="email">E-mail</label>
+						</p>
+
+						<p class="web">
+							<input type="text" name="web" id="web" class="input_comment" />
+							<label for="web">Subject</label>
+						</p>
+
+						<p class="text">
+							<textarea name="text" class="textarea_comment"></textarea>
+							<label for="web">Comments</label>
+						</p>
+
+						<p class="submit">
+							<input type="submit" value="Send" />
+						</p>
+
+					</form>
+				</div>
+			</div> 
+		</div>          
+
+	</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,172 @@
+<?php
+class Onlineshop extends CI_Controller {
+   
+   var $base;
+   var $css;
+   
+	  function __construct()
+       {
+            parent::__construct();
+		$this->base = $this->config->item('base_url');
+		$this->css = "style.css";
+	
+		$this->load->database();
+		
+		$this->load->library('session');
+		$this->load->library('pagination');
+		$this->load->model('home_model');
+		$this->load->helper('url');
+		$this->load->library('image_lib');
+		$this->load->library('form_validation');
+		$this->load->library('email');
+		$this->load->helper('menu');
+		$this->load->helper('parameter_helper');
+	}
+	function index($limit=0,$id="")
+	{
+	   $data['base'] = $this->base;
+	   $data['css'] = $this->css;
+	   $data['menu']="online";
+	  
+		
+		$data['category']=$this->home_model->category();
+		
+		    $rows=$this->db->count_all('maincategory');		
+			$url=$this->base."index.php/onlineshop/index";		
+			$config=pagination($url,$rows,$per_page="12");
+			$this->pagination->initialize($config);
+			$data['page']=$this->pagination->create_links();		
+			$data['main']=$main=$this->home_model->listmain($limit,$per_page);
+			
+			foreach($main->result() as $ma)
+			{
+				$cat=$this->home_model->listcat($ma->id);
+				$data['cats'][$ma->id]=$cat;
+				$data['count'][$ma->id]=count($cat);
+			}
+			$data['limit']=$limit;
+			
+			//$data['cats']=$this->home_model->listcat();
+		$this->load->view('header',$data);
+		$this->load->view('onlinestore',$data);
+		$this->load->view('footer',$data);
+		
+	}
+	function items()
+	{
+	   $data['base'] = $this->base;
+	   $data['css'] = $this->css;
+	   $data['menu']="online";
+	  
+		
+		
+		$this->load->view('header',$data);
+		$this->load->view('item',$data);
+		$this->load->view('footer',$data);
+		
+	}
+	function viewcart()
+	{
+	   $data['base'] = $this->base;
+	   $data['css'] = $this->css;
+	   $data['menu']="online";
+	  
+		
+		
+		$this->load->view('header',$data);
+		$this->load->view('viewcart',$data);
+		$this->load->view('footer',$data);
+		
+	}
+	
+	function checkout()
+	{
+	   $data['base'] = $this->base;
+	   $data['css'] = $this->css;
+	   $data['menu']="online";
+	  
+		
+		
+		$this->load->view('header',$data);
+		$this->load->view('checkout',$data);
+		$this->load->view('footer',$data);
+		
+	}
+	function billing()
+	{
+	   $data['base'] = $this->base;
+	   $data['css'] = $this->css;
+	   $data['menu']="online";
+	  
+		
+		
+		$this->load->view('header',$data);
+		$this->load->view('billing',$data);
+		$this->load->view('footer',$data);
+		
+	}
+	function product($id,$limit=0)
+	{
+	   $data['base'] = $this->base;
+	   $data['css'] = $this->css;
+	   $data['menu']="online";
+	  
+		$data['category']=$this->home_model->category();
+		$id=$this->home_model->product($id);
+		$ids="";
+		foreach($id as $val)
+		{
+			//print_r($val);
+/*
+			if($ids!="")
+			{
+				$ids.=",";
+			}
+			$ids.=$val->id;
+*/
+		}
+		//echo $ids;
+			
+		
+		$this->load->view('header',$data);
+		$this->load->view('product',$data);
+		$this->load->view('footer',$data);
+		
+	}
+	
+/*
+	function product($id,$start=0)
+	{
+	   $data['base'] = $this->base;
+	   $data['css'] = $this->css;
+	   $data['menu']="online";
+	  
+		$data['category']=$this->home_model->category();
+			
+			$this->limit=12;
+			$page['start']=intval($start);
+			$page['count']=0; 
+			$page['id']=$id; 
+			$page['limit'] = $this->limit;
+			$data['view']=$this->home_model->product($page);
+			$page['count']=1; 
+			$data['total']=$this->home_model->product($page);
+			$uri_segment = 4;
+			$rows=array_sum($data['total']['totalrows']);
+			$url=$this->base."index.php/onlineshop/product/".$id."/";
+			$per_page=$this->limit; 
+			$config=pagination($url,$rows,$per_page,$uri_segment);
+			$this->pagination->initialize($config);
+			$data['page']=$this->pagination->create_links();
+		
+		$this->load->view('header',$data);
+		$this->load->view('product',$data);
+		$this->load->view('footer',$data);
+		
+	}
+*/
+
+
+}
+/* End of file home.php */
+/* Location: ./system/application/controllers/home.*/

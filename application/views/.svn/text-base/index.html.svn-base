@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::MSP::</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/jMask.css" rel="stylesheet" type="text/css"/>
+
+<link rel="stylesheet" href="css/prettyGallery.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
+<script type="text/javascript" src="js/jMask.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js" ></script>
+<script type="text/javascript" src="js/raphael-min.js"  ></script>
+<script type="text/javascript" src="js/custom.js"  ></script>
+<script type="text/javascript" src="js/common.js"  ></script>
+<script type="text/javascript" src="js/jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="js/jquery.movingboxes.js"></script>
+<script type="text/javascript" src="js/jquery.movingboxes.min.js"></script>
+<script type="text/javascript" src="demo/demo.js"></script>
+<script type="text/javascript" src="js/slidegallery.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+
+<link href="demo/demo.css" rel="stylesheet" type="text/css" />
+<link href="styles/movingboxes.css" rel="stylesheet" type="text/css" />
+<link href="styles/movingboxes-ie.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+/**
+ * We use the initCallback callback
+ * to assign functionality to the controls
+ */
+function mycarousel_initCallback(carousel) {
+    jQuery('.jcarousel-control a').bind('click', function() {
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
+        return false;
+    });
+
+    jQuery('.jcarousel-scroll select').bind('change', function() {
+        carousel.options.scroll = jQuery.jcarousel.intval(this.options[this.selectedIndex].value);
+        return false;
+    });
+
+    jQuery('#mycarousel-next').bind('click', function() {
+        carousel.next();
+        return false;
+    });
+
+    jQuery('#mycarousel-prev').bind('click', function() {
+        carousel.prev();
+        return false;
+    });
+};
+
+// Ride the carousel...
+jQuery(document).ready(function() {
+    jQuery("#mycarousel").jcarousel({
+        scroll: 1,
+        initCallback: mycarousel_initCallback,
+        // This tells jCarousel NOT to autobuild prev/next buttons
+        buttonNextHTML: null,
+        buttonPrevHTML: null
+    });
+});
+
+</script>
+
+
+</head>
+
+<body>
+<div id="main">
+<div id="header">
+<div id="top">
+<div id="login"><a href="#" id="show">Login</a></div>
+<div class="login_box">
+<div class="login_inner">
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="E-mail id" onblur="if (this.value=='') { this.value='E-mail id'; }" onfocus="if (this.value=='E-mail id') { this.value=''; }" />
+</Div>
+
+<Div class="sign_in_form1">
+<input name="" type="password" class="sign_in_textarea" value="Password" onblur="if (this.value=='') { this.value='Password'; }" onfocus="if (this.value=='Password') { this.value=''; }" />
+</Div>
+
+<div class="keepme"><input name="" type="checkbox" value="" />Keep me signed in </div>
+
+<div class="keepme"> 
+<div class="signin_top"><a href="#"><input type="submit" name="button" id="button" value="Sign In" class="button" /></a>
+</div>
+<div class="forgot_signin">Forgot password</div>   
+</div>
+
+
+
+<a href="#" id="hide" class="close"></a>
+
+
+</div>
+</div>
+</div>
+<div class="logo"></div>
+<div id="logo-tag"><h1><a href="index.html">care and convenience main street pharmacy</a></h1>
+</div>
+
+<div id="right_links">
+<div id="toplinks">
+<div class="innertoplinks"><a href="#">Feedback</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Store Locator</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Shopping Cart</a></div>
+</div>
+
+<div id="outersearch">
+<div id="search">
+<input type="text" name="textfield" class="textarea" />       
+</div>
+<a href="#"><div id="searchbtn"></div></a></div>
+</div>
+</div>
+
+
+<div id="nav">
+	<ul>
+    	<li class="link01"><a href="index.html" class="active_nav"></a></li>
+        <li class="link02"><a href="services.html"></a></li>
+        <li class="link03"><a href=""></a>
+        	<ul class="subnav">
+                    <li><a href="refillprescription.html">Refill prescription</a></li>
+                    <li><a href="transferprescription.html">Transfer prescription</a></li>
+                    <li><a href="newprescription request.html">New prescription</a></li>
+                    
+
+                </ul>
+        </li>
+        <li class="link04"><a href="druginformation.html"></a></li>
+        <li class="link05"><a href=""></a></li>
+        <li class="link06"><a href=""></a></li>
+        <li class="link07"><a href=""></a></li>
+        <li class="link08"><a href=""></a>
+        <ul class="subnav">
+                   <li><a href="healthinformation.html">Health Information</a></li>
+                    <li><a href="cosultation.html">Consultation Corner</a></li>
+                
+        </ul>
+        </li>
+        <li class="link09"><a href=""></a></li>
+    </ul>
+    
+  </div>
+<div class="sub_toplink" style="z-index:2;">
+	<div class="list_h">
+    	<a href="#nogo">Cosmetics </a><a href="#nogo">Fragrances</a>
+        <a href="#nogo">Home Health</a>
+		<a href="#nogo">Cold & Allergy </a> 
+        <a href="#nogo">Pain Relief</a>
+        <a href="#nogo">Diabetes Care</a>
+        <a href="#nogo">Health Support</a>
+        <a href="#nogo">Feminine Care</a>
+        <a href="#nogo">Toys</a>
+        <a href="#nogo" style="border-right:none">View all </a></div>	
+</div>
+<div class="clear"></div>
+
+<div id="middileside">
+<div id="highlight_tabs">
+<div class="tab">
+<div class="tab_img"><a href="#"><img src="images/rx.jpg" alt="img" /></a></div>
+<div class="tab_text">
+<div class="tab_text2"><a href="refillprescription.html">Refill Prescription</a></div>
+<div class="tab_text3"><a href="#">Prescription Information</a></div>
+</div>
+</div>
+
+<div class="dotlines"></div>
+
+<div class="tab">
+<div class="tab_img"><a href="#"><img src="images/transfer.jpg" alt="img" /></a></div>
+<div class="tab_text">
+<div class="tab_text2"><a href="transferprescription.html">Transfer Prescription</a></div>
+<div class="tab_text3"><a href="#">Prescription Information</a></div>
+</div>
+</div>
+<div class="dotlines"></div>
+
+<div class="tab">
+<div class="tab_img"><a href="#"><img src="images/consultation.jpg" alt="img" /></a></div>
+<div class="tab_text">
+<div class="tab_text2"><a href="cosultation.html">Consultation Corner</a></div>
+<div class="tab_text3"><a href="#">Prescription Information</a></div>
+</div>
+</div>
+<div class="dotlines"></div>
+
+<div class="tab">
+	<div class="tab_img"><a href="#"><img src="images/healthinfo.jpg" alt="img" /></a></div>
+	<div class="tab_text">
+		<div class="tab_text2"><a href="healthinformation.html">Health Information Center</a></div>
+		<div class="tab_text3"><a href="#">Prescription Information</a></div>
+</div>
+</div>
+</div>
+
+
+<div id="container">
+	<div id="outerblock">
+		<div id="innerblock">
+		  <div id="slideshow">
+   			<div>
+    	<ul>
+    	<li><img src="img/im10.jpg" /></li>
+<!--        <li><img src="img/im7.jpg"/></li>
+        <li><img src="img/im6.jpg"/></li>
+         <li><img src="img/im5.jpg"/></li>
+         <li><img src="img/im4.jpg"/></li>
+         <li><img src="img/im3.jpg"/></li>
+         <li><img src="img/im2.jpg"/></li>
+         <li><img src="img/im1.jpg"/></li>-->
+
+<li></li>
+</ul>
+    	</div>
+    	</div>
+<!--<span id="ribbon-left"></span>-->
+		</div>
+		<div id="frame"></div>
+	</div>
+</div>
+
+</div>
+
+<div class="clear"></div>
+<!--midside-->
+<div id="middileside2">
+  <p>&nbsp;</p> 
+  <!--left row-->
+  
+<div class="left_contain">
+	<div class="sicknes_awares heart_add">
+    	<h2>Make Your Whole Heart Happy</h2>
+        <p>Acqire a Healthy heart. Make your Heart to be proud of a fit body </p>
+        <a>Read more </a>
+    </div> 
+    <div class="sicknes_awares diabeticsadd">
+    	<h2>Doing a Number on Diabetics?</h2>
+        <p>Acqire a Healthy heart. Make your Heart to be proud of a fit body </p>
+        <a>Read more </a>
+    </div> 
+    <div class="sicknes_awares lifebalance_aware">
+    	<h2>Work and Life Balance Assessment</h2>
+        <p>Acqire a Healthy heart. Make your Heart to be proud of a fit body </p>
+        <a>Read more </a>
+    </div> 
+    
+  <!--sickness add end-->  
+
+  
+<div class="newproducts_outer">
+	<img src="images/newproducts_outerbullet.jpg" />
+    <h2 class="test">New Products</h2>
+    <span>View More</span>
+    
+</div> 
+
+<div class="newproducts_lightbox">
+
+	<div class="leftbutton" id='prev'></div>
+    <div class="rghtbutton" id='nex'></div>
+<div id='galeryslider1' style="width:659px; position:absolute; overflow-x: hidden; overflow-y: hidden; z-index:10; left: 29px; height:152px;" >
+        <div class="products_scrol_area">
+            <ul >
+            <li><a href="#"> <img src="images/img1.jpg" /></a> <a href="#"><b>$150</b> 0ff</a><br />Loreal skin products</li>
+            <li> <a href="#"><img src="images/img2.jpg" /> </a> <a href="#"><b>20%</b> 0ff</a><br />Loreal skin products</li>
+            <li> <a href="#"><img src="images/img3.jpg" /></a> <a href="#"><b>25%</b> 0ff</a><br />Loreal skin products</li>
+            <li> <a href="#"><img src="images/img4.jpg" /></a> <a href="#"><b>25%</b> 0ff</a><br />Loreal skin products</li>
+            <li> <a href="#"><img src="images/img5.jpg" /></a> <a href="#"><b>10%</b> 0ff</a><br /> Loreal skin</li>
+            </ul>
+        </div>
+</div>
+
+
+
+</div>
+
+<div class="newproducts_outer">
+	<img src="images/newproducts_outerbullet.jpg" />
+    <h2 class="test">Shop by Brand</h2>
+    <span>View More</span>
+    
+</div>
+
+<div class="branddiv">
+	<ul>
+	<li> <a href=""> <img src="images/brand1.jpg" /></a> </li>
+    <li> <a href=""> <img src="images/brand2.jpg" /></a> </li>
+    <li> <a href=""> <img src="images/brand3.jpg" /></a> </li>
+    <li> <a href=""> <img src="images/brand4.jpg" /></a> </li>
+    <li> <a href=""> <img src="images/brand5.jpg" /></a> </li>
+    <li> <a href=""> <img src="images/brand6.jpg" /></a> </li>
+    <li> <a href=""> <img src="images/brand7.jpg" /></a> </li>
+    <li> <a href=""> <img src="images/brand8.jpg" /></a> </li>
+    </ul>
+</div>
+
+<div class="leftdown">
+	<img src="images/leftdownadd.jpg" />
+    <div class="factsdiv">
+    <h2> <b>Get the facts</b></h2>
+    <p>Special offers, Medication offers and more in your inbox
+    <input name="" type="text" class="textfield_facts" /> 
+    <input type="button" class="factsbutton" value="Submit" />
+    </p>
+    </div>
+</div>
+
+
+</div>
+<!--left row end-->
+
+
+<div class="right_contain">
+	<div class="signindiv"> 
+    	<div class="signinlogo"></div>
+        <h1>Instant refills</h1>
+        <p>Store name<span> *</span><br />
+
+        <input name="" type="text" /></p>
+        <p>Rx Number<span> *</span><br />
+          <input name="input" type="text" />
+        </p>
+        <p><b>For Rx Management registered users</b></p>
+        <div class="signinbot"><a href="#">Sign in </a> <a href="#">Register now</a> </div>
+    
+    </div>
+    
+    <div class="rightdivdown">
+        <div class="chatdiv">
+       	  <p> <img src="images/facebook_icon.jpg" /> <img src="images/twittericon.jpg" /><span>  <b> Connect with us</b></span>
+          </p>
+            <div class="chatwid_pharnacy"><img src="images/chatwid_pharmacy.jpg" /></div>
+        </div>
+        <div class="disclaimer">
+        	<h3>Disclaimer </h3>
+            <p> The information providfed on this website does not replace medical advice<br /> If you want to find out more or worried about any medical issue or symptoms that you may be experiancing please contact your local Main Street Pharmacy or personal doctor</p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+</div>
+
+    
+    
+    </div>
+    </div>
+</div>
+
+</div>
+<!--midside_end-->
+</div>
+
+</div>
+<div class="clear"></div>
+<div id="footer">
+<div id="footer_inner">
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Services</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Refill Prescription</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Transfer Prescription</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Consultation Corner</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Health Information Center</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Drug Information Center</a>
+</div>
+
+</div>
+
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Information</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sign In</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Services</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Activities</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shopping Cart</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Online shopping</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Help</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Contact Us</a></div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sitemap</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Privacypolicy</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Terms&amp;condtion</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shipping Information</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Get in Touch</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/phone.png" alt="img" /></div>
++971 (0)4 446 2629</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/mail.jpg" alt="img" /></div>
+mainst.rx4@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/link.png" alt="img" /></div>
+mainst.rx@gmail.com</div>
+<div class="footerlink">
+<div class="follows"><a href="#"><img src="images/rss.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/twitter.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/facebook.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/in.png" alt="img" /></a></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<script type="text/javascript"> 
+$("#galeryslider1").jCarouselLite({
+     btnPrev: '#prev',
+        btnNext: '#nex', 
+        mouseWheel: false,
+        auto: false,
+
+        speed: 500,
+        easing: false, 
+        vertical: false,
+        circular: true,
+        visible: 5,
+        start: 0,
+        scroll: 1
+  }); 
+  </script>
+  
+  
+</body>
+</html>

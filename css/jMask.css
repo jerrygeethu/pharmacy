@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+/*Classes used by the library */
+
+.active { position:absolute;z-index:10; } /* Class for element at top  */
+.reset{ position:absolute;z-index:4;  } /* Class for the rest of the elements  */
+
+#jMask-stage ul { list-style:none; display:block; margin:0px; padding:0px; float:left; }
+#jMask-stage ul li { position:absolute; display:block; overflow:hidden; width:677px; height:308px;  }
+#jMask-stage ul img { position:absolute;  }

@@ -1,0 +1,479 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/642/pharmacyy/trunk/application/views
+END
+welcome_message.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/welcome_message.php
+END
+store_details.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/store_details.php
+END
+newpasswordsecurity.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/newpasswordsecurity.php
+END
+cosultation.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/cosultation.php
+END
+edit_myaccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/484/pharmacyy/trunk/application/views/edit_myaccount.php
+END
+alphadrug.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/alphadrug.php
+END
+faq.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/faq.php
+END
+womens.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/womens.php
+END
+onlinestorenew.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/82/pharmacyy/trunk/application/views/onlinestorenew.php
+END
+add_pharmacy.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/50/pharmacyy/trunk/application/views/add_pharmacy.php
+END
+topic.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/topic.php
+END
+refillprescription.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/626/pharmacyy/trunk/application/views/refillprescription.php
+END
+product.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/626/pharmacyy/trunk/application/views/product.php
+END
+work.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/work.php
+END
+forgotpassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/484/pharmacyy/trunk/application/views/forgotpassword.php
+END
+detail_drug.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/detail_drug.php
+END
+drug_suggestion.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/533/pharmacyy/trunk/application/views/drug_suggestion.html
+END
+pregnancy.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/pregnancy.php
+END
+transferprescription.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/457/pharmacyy/trunk/application/views/transferprescription.php
+END
+commingsoon.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/457/pharmacyy/trunk/application/views/commingsoon.php
+END
+header.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/header.php
+END
+edit_shipping_information.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/484/pharmacyy/trunk/application/views/edit_shipping_information.php
+END
+homedelivery.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/648/pharmacyy/trunk/application/views/homedelivery.php
+END
+home_new.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/626/pharmacyy/trunk/application/views/home_new.php
+END
+transferprescription (copy).php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/transferprescription%20(copy).php
+END
+myaccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/457/pharmacyy/trunk/application/views/myaccount.php
+END
+drug_search.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/444/pharmacyy/trunk/application/views/drug_search.html
+END
+signin.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/signin.html
+END
+accountconfirmation.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/484/pharmacyy/trunk/application/views/accountconfirmation.php
+END
+newprescription (copy).php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/newprescription%20(copy).php
+END
+drug_suggestion.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/drug_suggestion.php
+END
+fitness.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/fitness.php
+END
+lifestyle.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/490/pharmacyy/trunk/application/views/lifestyle.html
+END
+billing.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/514/pharmacyy/trunk/application/views/billing.php
+END
+healthencyclopedia.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/healthencyclopedia.php
+END
+weight.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/weight.php
+END
+healthtopics.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/healthtopics.php
+END
+home.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/home.php
+END
+view_more_newproducts.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/588/pharmacyy/trunk/application/views/view_more_newproducts.php
+END
+newprescription.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/newprescription.php
+END
+store_delivary.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/649/pharmacyy/trunk/application/views/store_delivary.php
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/footer.php
+END
+lifestyle.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/511/pharmacyy/trunk/application/views/lifestyle.php
+END
+search_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/552/pharmacyy/trunk/application/views/search_list.php
+END
+drug_interaction.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/642/pharmacyy/trunk/application/views/drug_interaction.php
+END
+mens.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/mens.php
+END
+checkout.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/540/pharmacyy/trunk/application/views/checkout.php
+END
+druginformation.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/druginformation.php
+END
+healthinformation.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/healthinformation.php
+END
+newpassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/newpassword.php
+END
+privacy.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/privacy.php
+END
+createaccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/593/pharmacyy/trunk/application/views/createaccount.php
+END
+edit_email_communication.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/493/pharmacyy/trunk/application/views/edit_email_communication.php
+END
+shipping.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/shipping.php
+END
+feedback.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/516/pharmacyy/trunk/application/views/feedback.php
+END
+detaildrug.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/detaildrug.php
+END
+viewcart.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/626/pharmacyy/trunk/application/views/viewcart.php
+END
+edit_billing.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/493/pharmacyy/trunk/application/views/edit_billing.php
+END
+edit_pharmacy_store.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/647/pharmacyy/trunk/application/views/edit_pharmacy_store.php
+END
+signin.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/457/pharmacyy/trunk/application/views/signin.php
+END
+children.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/children.php
+END
+terms.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/484/pharmacyy/trunk/application/views/terms.php
+END
+dentalhealth.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/dentalhealth.php
+END
+item.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/535/pharmacyy/trunk/application/views/item.php
+END
+finestcategories.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/461/pharmacyy/trunk/application/views/finestcategories.php
+END
+register_authentication.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/register_authentication.html
+END
+detail_drug.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/76/pharmacyy/trunk/application/views/detail_drug.html
+END
+onlinestore.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/598/pharmacyy/trunk/application/views/onlinestore.php
+END
+product1.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/product1.php
+END
+dosage.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/623/pharmacyy/trunk/application/views/dosage.php
+END
+edit_personal_info.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/484/pharmacyy/trunk/application/views/edit_personal_info.php
+END
+contactus.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/565/pharmacyy/trunk/application/views/contactus.php
+END
+my_account.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/pharmacyy/trunk/application/views/my_account.html
+END
+onlinestore.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/390/pharmacyy/trunk/application/views/onlinestore.html
+END
+store_locator.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/507/pharmacyy/trunk/application/views/store_locator.php
+END
+presrequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/457/pharmacyy/trunk/application/views/presrequest.php
+END
+services.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/457/pharmacyy/trunk/application/views/services.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/540/pharmacyy/trunk/application/views/index.html
+END
+drug_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/603/pharmacyy/trunk/application/views/drug_search.php
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/pharmacyy/trunk/system/database/drivers/mysqli
+END
+mysqli_driver.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/pharmacyy/trunk/system/database/drivers/mysqli/mysqli_driver.php
+END
+mysqli_result.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/pharmacyy/trunk/system/database/drivers/mysqli/mysqli_result.php
+END
+mysqli_forge.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4/pharmacyy/trunk/system/database/drivers/mysqli/mysqli_forge.php
+END
+mysqli_utility.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/4/pharmacyy/trunk/system/database/drivers/mysqli/mysqli_utility.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/4/pharmacyy/trunk/system/database/drivers/mysqli/index.html
+END

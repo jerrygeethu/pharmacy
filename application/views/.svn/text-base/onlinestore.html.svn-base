@@ -1,0 +1,1984 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::MSP::</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/jMask.css" rel="stylesheet" type="text/css"/>
+<link  href="http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic&v1" rel="stylesheet" type="text/css" >
+<link  href="http://fonts.googleapis.com/css?family=Mako:regular&v1" rel="stylesheet" type="text/css" >
+<style type="text/css">
+   
+   /* This CSS is used for the Show/Hide functionality. */
+   .show_hide {
+      display: none;
+	  height:auto;
+	  }
+   a.showLink, a.hideLink {
+   width:100px;
+      text-decoration: none;
+	  font-size:13px;
+      color: #c8070d;
+      padding-left: 8px;
+	  float:right;
+      background: transparent url(down.gif) no-repeat left; }
+   a.hideLink {
+   height:auto;
+      background: transparent url(up.gif) no-repeat left; }
+</style>
+<script language="javascript" type="text/javascript">
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+</script>
+
+
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/jcarousel.js"></script>
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/jMask.js" ></script>
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/cufon-yui.js" ></script>
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/raphael-min.js"  ></script>
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/custom.js"  ></script>
+<script type="text/javascript" src="file://///prime/MEDIA/Tijina/MSP web/js/common.js"  ></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		$("#hide").click(function(){
+  			$(".login_box").hide();
+		});
+		$("#show").click(function(){
+  			$(".login_box").show();
+		});
+	});
+	</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 560;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+
+  // Remove scrollbar in JS
+  $('#slidesContainer').css('overflow', 'hidden');
+
+  // Wrap all .slides with #slideInner div
+  slides
+    .wrapAll('<div id="slideInner"></div>')
+    // Float left to display horizontally, readjust .slides width
+	.css({
+      'float' : 'left',
+      'width' : slideWidth
+    });
+
+  // Set #slideInner width equal to total width of all slides
+  $('#slideInner').css('width', slideWidth * numberOfSlides);
+
+  // Insert controls in the DOM
+  $('#slideshow01')
+    .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
+    .append('<span class="control" id="rightControl">Clicking moves right</span>');
+
+  // Hide left arrow control on first load
+  manageControls(currentPosition);
+
+  // Create event listeners for .controls clicks
+  $('.control')
+    .bind('click', function(){
+    // Determine new position
+	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
+    
+	// Hide / show controls
+    manageControls(currentPosition);
+    // Move slideInner using margin-left
+    $('#slideInner').animate({
+      'marginLeft' : slideWidth*(-currentPosition)
+    });
+  });
+
+  // manageControls: Hides and Shows controls depending on currentPosition
+  function manageControls(position){
+    // Hide left arrow if position is first slide
+	if(position==0){ $('#leftControl').hide() } else{ $('#leftControl').show() }
+	// Hide right arrow if position is last slide
+    if(position==numberOfSlides-1){ $('#rightControl').hide() } else{ $('#rightControl').show() }
+  }	
+});
+</script>
+    
+
+
+</head>
+
+<body>
+<div id="main">
+
+<div id="header">
+<div id="top">
+<div id="login"><a href="#" id="show">Login</a></div>
+<div class="login_box">
+<div class="login_inner">
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="E-mail id" onblur="if (this.value=='') { this.value='E-mail id'; }" onfocus="if (this.value=='E-mail id') { this.value=''; }" />
+</Div>
+
+<Div class="sign_in_form1">
+<input name="" type="password" class="sign_in_textarea" value="Password" onblur="if (this.value=='') { this.value='Password'; }" onfocus="if (this.value=='Password') { this.value=''; }" />
+</Div>
+
+<div class="keepme"><input name="" type="checkbox" value="" />Keep me signed in </div>
+
+<div class="keepme"> 
+<div class="signin_top"><a href="#"><input type="submit" name="button" id="button" value="Sign In" class="button" /></a>
+</div>
+<div class="forgot_signin">Forgot password</div>   
+</div>
+
+
+
+<a href="#" id="hide" class="close"></a>
+
+
+</div>
+</div>
+</div>
+<div class="logo"></div>
+<div id="logo-tag"><h1><a href="file://///prime/MEDIA/Tijina/MSP web/index.html">care and convenience main street pharmacy</a></h1>
+</div>
+
+<div id="right_links">
+<div id="toplinks">
+<div class="innertoplinks"><a href="#">Feedback</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Store Locator</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Shopping Cart</a></div>
+</div>
+
+<div id="outersearch">
+<div id="search">
+<input type="text" name="textfield" class="textarea" />       
+</div>
+<a href="#"><div id="searchbtn"></div></a></div>
+</div>
+</div>
+
+
+<div id="nav">
+	<ul>
+    	<li class="link01"><a href="file://///prime/MEDIA/Tijina/MSP web/index.html" ></a></li>
+        <li class="link02"><a href="file://///prime/MEDIA/Tijina/MSP web/services.html"></a></li>
+        <li class="link03"><a href=""></a>
+        		<ul class="subnav">
+                   <li><a href="file://///prime/MEDIA/Tijina/MSP web/refillprescription.html">Refill prescription</a></li>
+                    <li><a href="file://///prime/MEDIA/Tijina/MSP web/transferprescription.html">Transfer prescription</a></li>
+                    <li><a href="file://///prime/MEDIA/Tijina/MSP web/newprescription request.html">New prescription</a></li>
+                    
+
+                </ul>
+        </li>
+        <li class="link04"><a href="file://///prime/MEDIA/Tijina/MSP web/druginformation.html"></a></li>
+        <li class="link05"><a href="file://///prime/MEDIA/Tijina/MSP web/onlinestore.html"  class="active_nav"></a></li>
+        <li class="link06"><a href=""></a></li>
+        <li class="link07"><a href=""></a></li>
+        <li class="link08"><a href=""></a>
+        <ul class="subnav">
+                   <li><a href="file://///prime/MEDIA/Tijina/MSP web/healthinformation.html">Health Information</a></li>
+                    <li><a href="file://///prime/MEDIA/Tijina/MSP web/cosultation.html">Consultation Corner</a></li>
+                
+        </ul>
+        </li>
+        <li class="link09"><a href=""></a></li>
+    </ul>
+    
+  </div>
+  
+  <div class="sub_toplink" style="z-index:2;">
+	<div class="list_h">
+    	<a href="#nogo">Cosmetics </a><a href="#nogo">Fragrances</a>
+        <a href="#nogo">Home Health</a>
+		<a href="#nogo">Cold & Allergy </a> 
+        <a href="#nogo">Pain Relief</a>
+        <a href="#nogo">Diabetes Care</a>
+        <a href="#nogo">Health Support</a>
+        <a href="#nogo">Feminine Care</a>
+        <a href="#nogo">Toys</a>
+        <a href="#nogo" style="border-right:none">View all </a></div>	
+</div>
+  
+  
+  
+
+<div class="clear"></div>
+<div id="frame" style="display:none;">
+</div>
+
+<div id="consultation_outer">
+<div id="refill_outer">
+<div id="createaccount_head">Online Shop</div>
+<div id="createaccount_line"></div>
+<div id="createaccount_desc"> Whether you’re searching for household items or natural products – skin care, beauty products or vitamins, you can shop the CVS/pharmacy online store by department, brand or category. </div>
+
+
+
+<div id="online_outer">
+	 		<div id="left_online">
+      		<div id="onlineshop_cate">
+            	<div id="shop_cate">
+                	<div id="shop_head">Product Categories</div>
+                    <div class="cate_name"><a href="#">Weight Loss</a>  </div>
+                    <div class="cate_name"><a href="#">Health Supplement</a></div>
+                    <div class="cate_name"><a href="#">Face Care</a></div>
+                    <div class="cate_name"><a href="#">Hair Care</a></div>
+                    <div class="cate_name"><a href="#">Women's Health</a></div>
+                    <div class="cate_name"><a href="#">Men's Health</a></div>
+                    <div class="cate_name"><a href="#">Chavanaprashyam</a></div>
+                    <div class="cate_name"><a href="#">Diabetes Support</a></div>
+                    <div class="cate_name"><a href="#">Natural Shampoo</a></div>
+                    <div class="cate_name"><a href="#">Natural Virgin Coconut Oil</a></div>
+                    <div class="cate_name"><a href="#">Pain Relif</a></div>
+                    <div class="cate_name"><a href="#">Strees Relif</a></div>
+             
+                </div>
+            </div>
+            
+           <!-- <div id="online_adds"></div> -->
+           
+           
+           <div id="slideshow01">
+    <div id="slidesContainer">
+      <div class="slide">
+       <div class="img"><img src="images/adds/img2.jpg"></div>
+      </div>
+      <div class="slide">
+        <div class="img"><img src="images/adds/img3.jpg" /></div>
+      </div>
+      <div class="slide">
+        <div class="img"><img src="images/adds/img4.jpg" /></div>
+      </div>
+      <div class="slide">
+        <div class="img"><img src="images/adds/img5.jpg" /></div>
+      </div>
+    </div>
+  </div>
+  
+           
+   </div>
+   
+<!---------------------begin:categories------------------------->
+   <div class="categories_outer">
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Vitamins/Dietary Supplements</a></div>
+                  <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry01.png" width="74" height="74" /></a></div>
+                     </div>
+            <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p1-show" class="showLink" onclick="showHide('p1');return false;">Show more...</a></p>
+      <div id="p1" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p1-hide" class="hideLink" onclick="showHide('p1');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Skin Care</a></div>
+               <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry02.png" width="74" height="74" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p2-show" class="showLink" onclick="showHide('p2');return false;">Show more...</a></p>
+      <div id="p2" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p2-hide" class="hideLink" onclick="showHide('p2');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Electrical &amp; Audio</a></div>
+               <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry03.png" width="74" height="74" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p3-show" class="showLink" onclick="showHide('p3');return false;">Show more...</a></p>
+      <div id="p3" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p3-hide" class="hideLink" onclick="showHide('p3');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Eye &amp; Ear Care</a></div>
+                  <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry04.png" width="75" height="75" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p4-show" class="showLink" onclick="showHide('p4');return false;">Show more...</a></p>
+      <div id="p4" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p4-hide" class="hideLink" onclick="showHide('p4');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Home Health Care</a></div>
+               <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry05.png" width="75" height="75" /></a></div>
+                  </div>
+                  <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p5-show" class="showLink" onclick="showHide('p5');return false;">Show more...</a></p>
+      <div id="p5" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p5-hide" class="hideLink" onclick="showHide('p5');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Trial/Travel Sizes</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry06.png" width="75" height="75" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p6-show" class="showLink" onclick="showHide('p6');return false;">Show more...</a></p>
+      <div id="p6" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p6-hide" class="hideLink" onclick="showHide('p6');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div> 
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Cold &amp; Allergy</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry07.png" width="75" height="75" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p7-show" class="showLink" onclick="showHide('p7');return false;">Show more...</a></p>
+      <div id="p7" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p7-hide" class="hideLink" onclick="showHide('p7');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Pain Relief</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry08.png" width="74" height="74" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p8-show" class="showLink" onclick="showHide('p8');return false;">Show more...</a></p>
+      <div id="p8" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p8-hide" class="hideLink" onclick="showHide('p8');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Oral Care</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry09.png" width="75" height="75" /></a></div>
+                  </div>
+                  <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p9-show" class="showLink" onclick="showHide('p9');return false;">Show more...</a></p>
+      <div id="p9" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p9-hide" class="hideLink" onclick="showHide('p9');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div> 
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Health Supports</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry010.png" width="74" height="74" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p10-show" class="showLink" onclick="showHide('p10');return false;">Show more...</a></p>
+      <div id="p10" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p10-hide" class="hideLink" onclick="showHide('p10');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Baby Care</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry011.png" width="75" height="75" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p11-show" class="showLink" onclick="showHide('p11');return false;">Show more...</a></p>
+      <div id="p11" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p11-hide" class="hideLink" onclick="showHide('p11');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Weight Control/Nutritional Foods</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry012.png" width="75" height="75" /></a></div>
+                  </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p12-show" class="showLink" onclick="showHide('p12');return false;">Show more...</a></p>
+      <div id="p12" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p12-hide" class="hideLink" onclick="showHide('p12');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div> 
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Deodorants</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry013.png" width="74" height="74" /></a></div>
+                </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p13-show" class="showLink" onclick="showHide('p13');return false;">Show more...</a></p>
+      <div id="p13" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p13-hide" class="hideLink" onclick="showHide('p13');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">School &amp; Office</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry014.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p14-show" class="showLink" onclick="showHide('p14');return false;">Show more...</a></p>
+      <div id="p14" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p14-hide" class="hideLink" onclick="showHide('p14');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Toys</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry015.png" width="74" height="74" /></a></div>
+                 </div>
+                  <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p15-show" class="showLink" onclick="showHide('p15');return false;">Show more...</a></p>
+      <div id="p15" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p15-hide" class="hideLink" onclick="showHide('p15');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div>
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Diabetes Care</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry016.png" width="74" height="74" /></a></div>
+                </div>
+                  <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p16-show" class="showLink" onclick="showHide('p16');return false;">Show more...</a></p>
+      <div id="p16" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p16-hide" class="hideLink" onclick="showHide('p16');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Feminine Care</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry017.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p17-show" class="showLink" onclick="showHide('p17');return false;">Show more...</a></p>
+      <div id="p17" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p17-hide" class="hideLink" onclick="showHide('p17');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Foot Care</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry018.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p18-show" class="showLink" onclick="showHide('p18');return false;">Show more...</a></p>
+      <div id="p18" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p18-hide" class="hideLink" onclick="showHide('p18');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div>
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Pet &amp; Animal Supplies</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry019.png" width="74" height="74" /></a></div>
+                </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p19-show" class="showLink" onclick="showHide('p19');return false;">Show more...</a></p>
+      <div id="p19" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p19-hide" class="hideLink" onclick="showHide('p19');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Shaving &amp; Men's Grooming</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry020.png" width="75" height="75" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p20-show" class="showLink" onclick="showHide('p20');return false;">Show more...</a></p>
+      <div id="p20" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p20-hide" class="hideLink" onclick="showHide('p20');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Sewing &amp; Crafts</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry021.png" width="74" height="74" /></a></div>
+                 </div>
+                  <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p21-show" class="showLink" onclick="showHide('p21');return false;">Show more...</a></p>
+      <div id="p21" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p21-hide" class="hideLink" onclick="showHide('p21');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div>
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Sun Care</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry022.png" width="74" height="74" /></a></div>
+                </div>
+                  <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p22-show" class="showLink" onclick="showHide('p22');return false;">Show more...</a></p>
+      <div id="p22" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p22-hide" class="hideLink" onclick="showHide('p22');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Household Products</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry023.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p23-show" class="showLink" onclick="showHide('p23');return false;">Show more...</a></p>
+      <div id="p23" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p23-hide" class="hideLink" onclick="showHide('p23');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Alternative Therapy</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry01.png" width="75" height="75" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p24-show" class="showLink" onclick="showHide('p24');return false;">Show more...</a></p>
+      <div id="p24" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p24-hide" class="hideLink" onclick="showHide('p24');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div>
+           
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">First Aid</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry025.png" width="74" height="74" /></a></div>
+                </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p25-show" class="showLink" onclick="showHide('p25');return false;">Show more...</a></p>
+      <div id="p25" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p25-hide" class="hideLink" onclick="showHide('p25');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Compression Hosiery</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry01.png" width="75" height="75" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p26-show" class="showLink" onclick="showHide('p26');return false;">Show more...</a></p>
+      <div id="p26" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p26-hide" class="hideLink" onclick="showHide('p26');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Hair Care</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry027.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p27-show" class="showLink" onclick="showHide('p27');return false;">Show more...</a></p>
+      <div id="p27" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p27-hide" class="hideLink" onclick="showHide('p27');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div>
+           
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Multi-Cultural Beauty Care</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry29.png" width="74" height="74" /></a></div>
+                </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p28-show" class="showLink" onclick="showHide('p28');return false;">Show more...</a></p>
+      <div id="p28" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p28-hide" class="hideLink" onclick="showHide('p28');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Fragrances</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry29.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p29-show" class="showLink" onclick="showHide('p29');return false;">Show more...</a></p>
+      <div id="p29" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p29-hide" class="hideLink" onclick="showHide('p29');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Family Planning</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry030.png" width="74" height="74" /></a></div>
+                 </div>
+                  <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p30-show" class="showLink" onclick="showHide('p30');return false;">Show more...</a></p>
+      <div id="p30" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p30-hide" class="hideLink" onclick="showHide('p30');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div>
+           
+           
+           
+           
+           
+           
+           <div class="productcategories_mainouter">
+              <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Digestive Health</a></div>
+             <div class="categories_img">
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry031.png" width="74" height="74" /></a></div>
+                </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p31-show" class="showLink" onclick="showHide('p31');return false;">Show more...</a></p>
+      <div id="p31" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p31-hide" class="hideLink" onclick="showHide('p31');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Cosmetics</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry32.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p32-show" class="showLink" onclick="showHide('p32');return false;">Show more...</a></p>
+      <div id="p32" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p32-hide" class="hideLink" onclick="showHide('p32');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+               
+               <div class="productcategories_outer">
+             	<div class="productcategories_head2"><a href="#">Seasonal Products</a></div>
+           <div class="categories_img" >
+                     <div align="center"><a href="#"><img style="border:1px solid #a7b5be;" src="images/ctgry29.png" width="74" height="74" /></a></div>
+                 </div>
+                   <!---------------------product categories------------------------->
+            <div id="wrap">
+      <p>
+      <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                     </ul>
+                  </div>
+      
+      <a href="#" id="p33-show" class="showLink" onclick="showHide('p33');return false;">Show more...</a></p>
+      <div id="p33" class="show_hide">
+        <div class="productcategories">
+                     <ul>
+                       <li><a href="#">Specialty Supplements</a></li>
+                       <li><a href="#">Mineral Supplements</a></li>
+                       <li><a href="#">Multivitamins &amp; Multivitamins w/Minerals</a></li>
+                       <li><a href="#">Herbals &amp; Botanicals</a></li>
+                       <li><a href="#">Single Entity Vitamins</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                       <li><a href="#">Children's Vitamins/Dietary Supplements</a></li>
+                     </ul>
+                  </div>
+         <p><a href="#" id="p33-hide" class="hideLink" onclick="showHide('p33');return false;">Hide</a></p>
+      </div>
+   </div>
+   			</div>
+            <!---------------------product categories ends------------------------->
+           </div>
+           
+      
+      
+      
+  </div>         
+<!---------------------end:categories------------------------->  
+           
+           
+           
+               
+               
+               
+               
+               
+               
+             
+          
+                    <div id="tnt_pagination">
+<span class="disabled_tnt_pagination">Prev</span><a href="#1">1</a><a href="#2">2</a><a href="#3">3</a><span class="active_tnt_link">4</span><a href="#5">5</a><a href="#6">6</a><a href="#7">7</a><a href="#8">8</a><a href="#9">9</a><a href="#10">10</a><a href="#forwaed">Next</a></div>
+
+   <div id="offer"><img src="images/buy2.jpg" height="148" /></div>   
+      
+      
+      </div>
+              
+              
+	  <div class="clear"></div>
+        
+    </div>
+</div>
+</div>
+</div>
+<div class="clear">
+                
+                </div>
+<div id="footer">
+<div id="footer_inner">
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Services</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Refill Prescription</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Transfer Prescription</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Consultation Corner</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Health Information Center</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Drug Information Center</a>
+</div>
+
+</div>
+
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Information</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sign In</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Services</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Activities</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shopping Cart</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Online shopping</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Help</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Contact Us</a></div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sitemap</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Privacypolicy</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Terms&amp;condtion</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shipping Information</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Get in Touch</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/phone.png" alt="img" /></div>
++971 (0)4 446 2629</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/mail.jpg" alt="img" /></div>
+mainst.rx4@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/link.png" alt="img" /></div>
+mainst.rx@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/follows.png" alt="img" /></div>
+<div class="follows"><a href="#"><img src="images/rss.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/twitter.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/facebook.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/in.png" alt="img" /></a></div>
+
+</div>
+</div>
+</div>
+</div>
+                <script type="text/javascript">
+	jQuery(document).ready(function($){
+		
+$(".news-slider").jCarouselLite({
+    btnNext: ".next",
+    btnPrev: ".prev",
+    vertical: true,
+	visible: 2,
+	circular: true
+});
+
+$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+	
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+	
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+	
+	});	 
+	
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Last Step: Verify your Identity</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jMask.css" rel="stylesheet" type="text/css"/>
+
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/jMask.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js" ></script>
+<script type="text/javascript" src="js/raphael-min.js"  ></script>
+<script type="text/javascript" src="js/custom.js"  ></script>
+<script type="text/javascript" src="js/common.js"  ></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		$("#hide").click(function(){
+  			$(".login_box").hide();
+		});
+		$("#show").click(function(){
+  			$(".login_box").show();
+		});
+	});
+	</script>
+<script type="text/javascript"src="jquery.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+
+});
+</script>
+
+<script type="text/javascript">
+function add()
+{
+
+	var a=1;
+	var b=parseInt(document.getElementById('num').value);  
+	document.getElementById('num').value=a+b;
+	
+}
+
+function minus()
+{
+
+	var a=1;
+	var b=parseInt(document.getElementById('num').value);  
+	document.getElementById('num').value=b-a;
+	
+}
+
+</script>
+
+
+<!-- Copyright 2000-2006 Adobe Macromedia Software LLC and its licensors. All rights reserved. -->
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="main">
+
+<div id="header">
+<div id="top">
+<div id="login"><a href="#" id="show">Login</a></div>
+<div class="login_box">
+<div class="login_inner">
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="E-mail id" onblur="if (this.value=='') { this.value='E-mail id'; }" onfocus="if (this.value=='E-mail id') { this.value=''; }" />
+</Div>
+
+<Div class="sign_in_form1">
+<input name="" type="password" class="sign_in_textarea" value="Password" onblur="if (this.value=='') { this.value='Password'; }" onfocus="if (this.value=='Password') { this.value=''; }" />
+</Div>
+
+<div class="keepme"><input name="" type="checkbox" value="" />Keep me signed in </div>
+
+<div class="keepme"> 
+<div class="signin_top"><a href="#"><input type="submit" name="button" id="button" value="Sign In" class="button" /></a>
+</div>
+<div class="forgot_signin">Forgot password</div>   
+</div>
+
+
+
+<a href="#" id="hide" class="close"></a>
+
+
+</div>
+
+</div>
+</div>
+<div class="logo"></div>
+<div id="logo-tag"><h1><a href="index.html">care and convenience main street pharmacy</a></h1>
+</div>
+
+<div id="right_links">
+<div id="toplinks">
+<div class="innertoplinks"><a href="#">Feedback</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Store Locator</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Shopping Cart</a></div>
+</div>
+
+<div id="outersearch">
+<div id="search">
+<input type="text" name="textfield" class="textarea" />       
+</div>
+<a href="#"><div id="searchbtn"></div></a></div>
+</div>
+</div>
+
+
+<div id="nav">
+	<ul>
+    	<li class="link01"><a href="index.html" ></a></li>
+        <li class="link02"><a href="services.html"></a></li>
+        <li class="link03"><a href=""></a>
+        		<ul class="subnav">
+                   <li><a href="refillprescription.html">Refill prescription</a></li>
+                    <li><a href="transferprescription.html">Transfer prescription</a></li>
+                    <li><a href="newprescription request.html">New prescription</a></li>
+                    
+
+                </ul>
+        </li>
+        <li class="link04"><a href="druginformation.html"></a></li>
+        <li class="link05"><a href="onlinestore.html"></a></li>
+        <li class="link06"><a href="myaccount.html"   class="active_nav"></a></li>
+        <li class="link07"><a href=""></a></li>
+        <li class="link08"><a href=""></a>
+        <ul class="subnav">
+                   <li><a href="healthinformation.html">Health Information</a></li>
+                    <li><a href="cosultation.html">Consultation Corner</a></li>
+                
+        </ul>
+        </li>
+        <li class="link09"><a href=""></a></li>
+    </ul>
+    
+  </div>
+
+<div class="clear"></div>
+<div id="frame" style="display:none;">
+</div>
+
+<div id="consultation_outer">
+<div id="refill_outer">
+<div id="createaccount_head">My Account</div>
+<div id="createaccount_line"></div>
+<!---->
+ <!-- spry bound div-->  <div class="register_verification">
+ 	<div class="register_verificationintro">
+    <h2>Last Step: Verify Your Identity</h2><p>We need to make sure only you can access your private pharmacy records and health information. To do so, we will need you to verify your identity using one of the convenient options below.</p>
+<p>
+Afterwards you'll have full access to your pharmacy account, including prescription refills, prescription history and more.
+</p> 
+    </div>
+  
+ 
+<div id="TabbedPanels1" class="TabbedPanels1">
+  <ul class="TabbedPanelsTabGroup1">
+    <li class="TabbedPanelsTab" tabindex="0">Online</li>
+    <li class="TabbedPanelsTab" tabindex="0">By Phone</li>
+  </ul>
+  <div class="TabbedPanelsContentGroup1">
+  
+    <div class="TabbedPanelsContent"><!--content1-->
+<div class="onlineout">
+	<h2> Verify Online <i>(recommended)</i></h2>
+    <p>Verify your identity right now by answering a few simple questions about yourself. They are generated using personal identifying information, such as your date of birth. This information is used only to confirm your identity.
+
+This secure process is very similar to those used by banks and credit institutions. It is designed to keep your information secure and prevent unauthorized individuals from accessing your personal information.</p>
+</div>
+<p class="floatright">
+<input name="button" type="button" class="onlinebutton" value="Get Started" />
+</p>
+
+    </div><!--content1 end-->
+    
+  
+    <div class="TabbedPanelsContent"><!--content2-->
+    	<div class="onlineout">
+	<h2> Verify by Phone</h2>
+    <p>Our automated system is easy to use and will take only a few moments of your time. <br />
+
+Please call <b>(800) 573-3586 </b>and provide the following unique activation code:<br />
+
+<b>3771 0089</b><br />
+
+For faster verification, please call from the phone number the pharmacy has on file.</p>
+<h2>After Verification</h2>
+<p>Once you've completed your verification, use the<b> Access Your Account</b> button below to continue. From there you'll be able to access prescription refills, prescription history and more.
+</p>
+<p class="floatright">
+<input name="button" type="button" class="onlinebutton" value="Access Your Account" />
+</p>
+		</div>
+	<div class="onlineout onlineout_bordernone">
+    <h2>Verify Later</h2>
+    <p>If you need to complete your verification later, you can still order a prescription refill using In-store Express Refills.<br />
+
+<b>Note:</b> Make sure you have the<b> prescription number</b> you wish to refill before using In-store Express Refills.</p> <cite>Use Express Refills</cite>
+    </div>        
+          
+    </div><!--content2 end-->
+  </div>
+</div>
+
+<!--_________________#spry tab end#_____________________-->
+</div> <!-- spry bound div-->
+
+
+
+
+</div>
+</div>
+<p>&nbsp;</p>
+</div>
+<div class="clear">
+                
+                </div>
+<div id="footer">
+<div id="footer_inner">
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Services</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Refill Prescription</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Transfer Prescription</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Consultation Corner</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Health Information Center</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Drug Information Center</a>
+</div>
+
+</div>
+
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Information</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sign In</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Services</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Activities</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shopping Cart</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Online shopping</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Help</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Contact Us</a></div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sitemap</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Privacypolicy</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Terms&amp;condtion</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shipping Information</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Get in Touch</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/phone.png" alt="img" /></div>
++971 (0)4 446 2629</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/mail.jpg" alt="img" /></div>
+mainst.rx4@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/link.png" alt="img" /></div>
+mainst.rx@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/follows.png" alt="img" /></div>
+<div class="follows"><a href="#"><img src="images/rss.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/twitter.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/facebook.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/in.png" alt="img" /></a></div>
+
+</div>
+</div>
+</div>
+</div>
+
+                <script type="text/javascript">
+jQuery(document).ready(function($){
+		
+$(".news-slider").jCarouselLite({
+    btnNext: ".next",
+    btnPrev: ".prev",
+    vertical: true,
+	visible: 2,
+	circular: true
+});
+
+$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+	
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+	
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+	
+	});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>

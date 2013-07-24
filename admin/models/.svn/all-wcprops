@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/59/pharmacyy/trunk/admin/models
+END
+news_model.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/pharmacyy/trunk/admin/models/news_model.php
+END
+category_model.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4/pharmacyy/trunk/admin/models/category_model.php
+END
+admin_model.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/59/pharmacyy/trunk/admin/models/admin_model.php
+END

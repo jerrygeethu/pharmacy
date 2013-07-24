@@ -1,0 +1,72 @@
+<div class="navigation"><a href="<?php echo $base;?>index.php">Home</a> &rsaquo;&rsaquo; <a href="<?php echo $base;?>index.php/drugs/druginformation">Drug Information</a> &rsaquo;&rsaquo; Drug Interaction</div>
+
+	<div class="clear"></div>
+	<div id="frame" style="display:none;"></div>
+	<div id="consultation_outer">
+		<div id="refill_outer" style="height:136px;">
+			<form name="frm">
+				<div id="createaccount_head">Pharmacy Drug Interaction</div>
+				<div id="createaccount_line"></div>	
+				
+					<?php
+<<<<<<< .mine
+						}
+						else
+						{
+					?>
+							<div style="float:left;width:999px;height:200px;font-style:italic;" class="popup">Search Result not Fount</div>
+					<?php
+						}
+						if(!empty($spanish))
+						{
+					?>
+							<div style="float:left;width:999px;height:200px;" class="popup">
+								<div style="font-style:italic;font-weight:normal;">Spanish &rsaquo;&rsaquo;</div><br/>
+								<?php 
+									for($j=0;$j<count($span);$j++)
+									{
+								?>
+										<a href='' onclick='javascript:openwindow("<?php echo $span[$j];?>")'><?php echo $drugname;?></a><br/>
+								<?php
+									}
+								?>
+							</div>
+					<?php
+						}
+					?>
+					<?php
+/*
+=======
+>>>>>>> .r632
+						if(!empty($drugname_oral))
+						{
+					?>		<div style="float:left;" class="popup">
+								<a href='' onclick='javascript:openwindow("<?php echo $a1;?>")'><?php echo $drugname_oral;?></a>
+							</div>
+					<?php		
+						}
+						echo "<br/>";
+						if(!empty($drugname_injection))
+						{
+					?>	
+							<div style="float:left;" class="popup">
+								<a href='' onclick='javascript:openwindow("<?php echo $v1;?>")'><?php echo $drugname_injection;?></a>
+							</div>
+					<?php	
+						}
+					?>
+									
+			</form>
+			
+		</div>
+	</div>
+	</div>
+	<div class="clear">
+</div>
+<script language="javascript">
+function openwindow(id)
+{
+	//alert(id);
+	window.open("<?php echo $base;?>drugInteraction/"+id,"_blank","height=700,width=800,status=yes,toolbar=no,scrollbars=yes,menubar=no,location=yes");
+}
+</script>

@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Main Street Pharmacy
+</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/jMask.css" rel="stylesheet" type="text/css"/>
+
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/jMask.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js" ></script>
+<script type="text/javascript" src="js/raphael-min.js"  ></script>
+<script type="text/javascript" src="js/custom.js"  ></script>
+<script type="text/javascript" src="js/common.js"  ></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		$("#hide").click(function(){
+  			$(".login_box").hide();
+		});
+		$("#show").click(function(){
+  			$(".login_box").show();
+		});
+	});
+	</script>
+<script type="text/javascript"src="jquery.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+
+});
+</script>
+
+<script type="text/javascript">
+function add()
+{
+
+	var a=1;
+	var b=parseInt(document.getElementById('num').value);  
+	document.getElementById('num').value=a+b;
+	
+}
+
+function minus()
+{
+
+	var a=1;
+	var b=parseInt(document.getElementById('num').value);  
+	document.getElementById('num').value=b-a;
+	
+}
+
+</script>
+
+
+<!-- Copyright 2000-2006 Adobe Macromedia Software LLC and its licensors. All rights reserved. -->
+</head>
+
+<body>
+<div id="main">
+
+<div id="header">
+<div id="top">
+<div id="login"><a href="#" id="show">Login</a></div>
+<div class="login_box">
+<div class="login_inner">
+<Div class="sign_in_form1">
+<input name="" type="text" class="sign_in_textarea" value="E-mail id" onblur="if (this.value=='') { this.value='E-mail id'; }" onfocus="if (this.value=='E-mail id') { this.value=''; }" />
+</Div>
+
+<Div class="sign_in_form1">
+<input name="" type="password" class="sign_in_textarea" value="Password" onblur="if (this.value=='') { this.value='Password'; }" onfocus="if (this.value=='Password') { this.value=''; }" />
+</Div>
+
+<div class="keepme"><input name="" type="checkbox" value="" />Keep me signed in </div>
+
+<div class="keepme"> 
+<div class="signin_top"><a href="#"><input type="submit" name="button" id="button" value="Sign In" class="button" /></a>
+</div>
+<div class="forgot_signin">Forgot password</div>   
+</div>
+
+
+
+<a href="#" id="hide" class="close"></a>
+
+
+</div>
+
+</div>
+</div>
+<div class="logo"></div>
+<div id="logo-tag"><h1><a href="index.html">care and convenience main street pharmacy</a></h1>
+</div>
+
+<div id="right_links">
+<div id="toplinks">
+<div class="innertoplinks"><a href="#">Feedback</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Store Locator</a></div>
+<div class="topline"></div>
+<div class="innertoplinks"><a href="#">Shopping Cart</a></div>
+</div>
+
+<div id="outersearch">
+<div id="search">
+<input type="text" name="textfield" class="textarea" />       
+</div>
+<a href="#"><div id="searchbtn"></div></a></div>
+</div>
+</div>
+
+
+<div id="nav">
+	<ul>
+    	<li class="link01"><a href="index.html" ></a></li>
+        <li class="link02"><a href="services.html"></a></li>
+        <li class="link03"><a href=""></a>
+        		<ul class="subnav">
+                   <li><a href="refillprescription.html">Refill prescription</a></li>
+                    <li><a href="transferprescription.html">Transfer prescription</a></li>
+                    <li><a href="newprescription request.html">New prescription</a></li>
+                    
+
+                </ul>
+        </li>
+        <li class="link04"><a href="druginformation.html"></a></li>
+        <li class="link05"><a href="onlinestore.html"></a></li>
+        <li class="link06"><a href="myaccount.html"   class="active_nav"></a></li>
+        <li class="link07"><a href=""></a></li>
+        <li class="link08"><a href=""></a>
+        <ul class="subnav">
+                   <li><a href="healthinformation.html">Health Information</a></li>
+                    <li><a href="cosultation.html">Consultation Corner</a></li>
+                
+        </ul>
+        </li>
+        <li class="link09"><a href=""></a></li>
+    </ul>
+    
+  </div>
+
+<div class="clear"></div>
+<div id="frame" style="display:none;">
+</div>
+
+<div id="consultation_outer">
+<div id="refill_outer">
+<div id="createaccount_head">Store Locator</div>
+<div id="createaccount_line"></div>
+
+
+
+
+<div id="online_outer">
+	 		<div id="left_online">
+      		<div id="onlineshop_cate">
+            	<div id="shop_cate">
+                	<div class="drugsearch_lft">Didn't find what you are looking for?</div>
+                    <div class="cate_name"><img src="images/arrowbullet.png" style="margin-right:10px;" alt="" /><a href="#">Suggest a product</a>  </div>
+                    <div class="cate_name"><img src="images/arrowbullet.png" style="margin-right:10px;" alt="" /><a href="druginformation.html">Drug Information</a></div>
+                    <div class="cate_name"><img src="images/arrowbullet.png" style="margin-right:10px;" alt="" /><a href="onlinestore.html">Onlineshop</a></div>
+                    </div>
+      		</div>
+            
+           <!-- <div id="online_adds"></div> -->
+           
+           
+           
+  
+           
+   </div>
+   
+   
+   
+   
+   <div id="myaccount_box" style="width:690px;padding-bottom:20px;">
+        	<div id="box_head" style="width:680px;">Search results for calpol</div>
+           	  <div class="drug">Your search for "calpol" returned 0 results.<br />
+				(Did you mean <a href="#">carpal</a>?)
+       	  </div>
+              
+              
+              
+              
+              
+              
+              
+              <div class="account" style="margin-left:10px;">
+                <div class="drug_left">Search again:</div>
+                <div class="account_right" style="width:450px;">
+                  <div id="drugtext_outer" style="margin-top:0px; padding:5px;">
+  				<input type="text" name="textfield2" id="textfield2" class="drugtextarea" value="drug name" onblur="if (this.value=='') 				{ this.value='drug name'; }" onfocus="if (this.value=='drug name') { this.value=''; }" />
+			</div>
+				<div id="drug_btn" style="margin-top:5px; width:40px;"><input type="submit" name="button" id="button" value="Go" class="button" style="width:40px;" /></div>
+</div>
+              </div>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div id="it_contantmain01" style="display:none;">     
+         <div class="storedetails_time">
+         
+         
+         
+         <div class="store_dtls_left">
+                  <span><b>Store Hours</b><br />
+Mon-Fri: 08:30 AM - 06:30 PM<br />
+Sat:  08:30 AM - 01:30 PM 
+</span>
+           	  </div>
+              </div>
+              </div>
+         	
+            
+            
+          
+          
+          
+          
+          
+          
+         </div>
+</div>
+            
+            
+            
+            
+            
+            
+            
+            </div>
+   
+   
+   
+   
+
+          
+                    <div id="offer"><img src="images/buy2.jpg" height="148" /></div>   
+      
+      
+      </div>
+
+
+
+
+</div>
+</div>
+<p>&nbsp;</p>
+</div>
+<div class="clear">
+                
+                </div>
+<div id="footer">
+<div id="footer_inner">
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Services</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Refill Prescription</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Transfer Prescription</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Consultation Corner</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Health Information Center</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Drug Information Center</a>
+</div>
+
+</div>
+
+<div class="footerlinks">
+<div class="footerhead">Pharmacy Information</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sign In</a>
+</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Services</a>
+</div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Activities</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shopping Cart</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Online shopping</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Help</div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Contact Us</a></div>
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Sitemap</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Privacypolicy</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Terms&amp;condtion</a></div>
+
+<div class="footerlink">
+<div class="icon"></div>
+<a href="#">Shipping Information</a></div>
+</div>
+
+
+<div class="footerlinks">
+<div class="footerhead">Get in Touch</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/phone.png" alt="img" /></div>
++971 (0)4 446 2629</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/mail.jpg" alt="img" /></div>
+mainst.rx4@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/link.png" alt="img" /></div>
+mainst.rx@gmail.com</div>
+<div class="footerlink">
+<div class="footer_icons"><img src="images/follows.png" alt="img" /></div>
+<div class="follows"><a href="#"><img src="images/rss.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/twitter.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/facebook.png" alt="img" /></a></div>
+<div class="follows"><a href="#"><img src="images/in.png" alt="img" /></a></div>
+
+</div>
+</div>
+</div>
+</div>
+
+                <script type="text/javascript">
+	jQuery(document).ready(function($){
+		
+$(".news-slider").jCarouselLite({
+    btnNext: ".next",
+    btnPrev: ".prev",
+    vertical: true,
+	visible: 2,
+	circular: true
+});
+
+$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+	
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+	
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+	
+	});	 
+	
+	
+</script>
+
+
+
+
+<script language="javascript" type='text/javascript'>
+function showit01() 
+{
+if(document.getElementById('it_contantmain01').style.display=="block")
+{
+document.getElementById('it_contantmain01').style.display="none";
+}
+else
+{
+document.getElementById('it_contantmain01').style.display="block";
+}
+}
+
+function showit02() 
+{
+if(document.getElementById('it_contantmain02').style.display=="block")
+{
+document.getElementById('it_contantmain02').style.display="none";
+}
+else
+{
+document.getElementById('it_contantmain02').style.display="block";
+}
+}
+
+function showit03() 
+{
+if(document.getElementById('it_contantmain03').style.display=="block")
+{
+document.getElementById('it_contantmain03').style.display="none";
+}
+else
+{
+document.getElementById('it_contantmain03').style.display="block";
+}
+}
+
+function showit04() 
+{
+if(document.getElementById('it_contantmain04').style.display=="block")
+{
+document.getElementById('it_contantmain04').style.display="none";
+}
+else
+{
+document.getElementById('it_contantmain04').style.display="block";
+}
+}
+
+</script>
+</body>
+</html>

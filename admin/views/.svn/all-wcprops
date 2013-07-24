@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/591/pharmacyy/trunk/admin/views
+END
+listdrug.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/listdrug.php
+END
+orders.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/orders.php
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/footer.php
+END
+drugcatedit.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/drugcatedit.php
+END
+listpharmacy.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/75/pharmacyy/trunk/admin/views/listpharmacy.php
+END
+drugcatadd.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/drugcatadd.php
+END
+listcat.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/listcat.php
+END
+menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/58/pharmacyy/trunk/admin/views/menu.php
+END
+listall.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/listall.php
+END
+viewnews.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/viewnews.php
+END
+additem.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/additem.php
+END
+editdrug.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/editdrug.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/login.php
+END
+changepassword.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/changepassword.php
+END
+drugadd.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/drugadd.php
+END
+adddrug.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/adddrug.php
+END
+editpharmacy.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/75/pharmacyy/trunk/admin/views/editpharmacy.php
+END
+edit_drug_details.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/edit_drug_details.php
+END
+add_pharmacy.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/645/pharmacyy/trunk/admin/views/add_pharmacy.php
+END
+editcat.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/editcat.php
+END
+drug_details_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/drug_details_add.php
+END
+addcat.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/addcat.php
+END
+listfeedback.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/listfeedback.php
+END
+feedback.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/feedback.php
+END
+addnews.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/addnews.php
+END
+listdrugcat.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/listdrugcat.php
+END
+dashboard.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/dashboard.php
+END
+header.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/58/pharmacyy/trunk/admin/views/header.php
+END
+list_drug_det.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/pharmacyy/trunk/admin/views/list_drug_det.php
+END
